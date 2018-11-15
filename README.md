@@ -1,7 +1,7 @@
 
 
 <p align="center">
-  <img src ="images/snoo.128png">
+  <img src ="/images/snoo.128png">
 </p>
 
 #Karma-Counter
