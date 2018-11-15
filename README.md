@@ -4,7 +4,7 @@
   <img src ="https://github.com/axellarsstenson/karma-kounter/blob/master/images/snoo128.png">
 </p>
 
-#Karma-Counter
+# Karma Kounter
 
 A reddit karma counter that displays karma differently depending on number to
 fit within Chrome's badge char limit constraints.
