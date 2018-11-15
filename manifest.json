@@ -1,12 +1,11 @@
 {
   "name": "Karma Kounter",
-  "description": "A Chrome extension that tracks your reddit Karma. Clicking
-    it will change the display between Link and Comment Karma.",
+  "description": "A Chrome extension that tracks your reddit Karma. Clicking it will change the display between Link and Comment Karma.",
   "manifest_version": 2,
   "version": "1.0",
   "background": {
     "scripts": ["background.js"],
-    "persistent": false
+    "persistent": true
   },
   "browser_action": {
     "default_icon": {
