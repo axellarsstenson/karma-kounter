@@ -53,7 +53,7 @@ var checkKarma = function() {
 };
 
 // Load number when new page is opened.
-chrome.browserAction.setBadgeBackgroundColor({color: '#276795'})
+chrome.browserAction.setBadgeBackgroundColor({color: '#276795'});
 var displaySetting = true;
 checkKarma();
 
