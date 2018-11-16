@@ -1,4 +1,4 @@
-var fetchReddit = function() {
+var checkKarma = function() {
   // Setup and open API
   var xhr = new XMLHttpRequest();
   xhr.open("GET", "https://www.reddit.com/api/me.json", true);
@@ -55,13 +55,13 @@ var fetchReddit = function() {
 // Load number when new page is opened.
 chrome.browserAction.setBadgeBackgroundColor({color: '#276795'})
 var displaySetting = true;
-fetchReddit();
+checkKarma();
 
-// for testing 5 seconds.
-setInterval(fetchReddit, 30000);
+// Check every 30 seconds
+setInterval(checkKarma, 30000);
 
+// On Click change display settings between karma types
 chrome.browserAction.onClicked.addListener(function(tab) {
   displaySetting = !displaySetting;
-  fetchReddit();
-  // chrome.browserAction.setBadgeText({ text: karma });
+  checkKarma();
 });
